@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 19.00
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "SQLPerfromanceMonitoring", "SQLPerfromanceMonitoring\SQLPerfromanceMonitoring.ssmssqlproj", "{4C5369C5-4B1D-4454-A880-0BF23F0499DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C5369C5-4B1D-4454-A880-0BF23F0499DF}.Default|Default.ActiveCfg = Default
+		{EA718914-BB48-4079-AA59-D45AB6156712}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {402B5CC7-8551-47B6-BA4F-124352D2A542}
+	EndGlobalSection
+EndGlobal
