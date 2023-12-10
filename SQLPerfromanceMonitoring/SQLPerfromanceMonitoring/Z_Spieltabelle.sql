@@ -16,6 +16,48 @@ select * from kundeumsatz
 GO 9 --keine Varable darin möglich
 -- 15 Sek
 
+
+alter table kundeumsatz add id int identity
+
+
+select top 3 * from kundeumsatz
+
+set statistics io, time on
+
+
+select country, city, sum(freight) 
+from kundeumsatz group by country, city
+option (maxdop 1)
+
+
+
+
+--Kostenschwellwert auf Server(ob Paral. ja oder nein) OLAP 25  OLTP 50
+----auf Server Maxdop, aber auch pro DB, aber abh. Kostenschwellwert
+--auch bvei Abfragen MAXDOP möglich
+
+--16 Kerne
+--Server: Kostenschwellwert 50 
+--			MAXDOP  6
+
+--DB MAXDOP 0
+
+--Abfrage 1
+
+
+select * from sys.dm_os_wait_stats where wait_type like 'CX%'
+
+
+
+
+
+
+
+
+
+
+
+
 alter table kundeUmsatz add ID int identity --8 Sekunden
 --alter table..
 
